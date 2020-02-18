@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+.show{
+display: block !important;
+}
+
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<h2>Accordion</h2>
+
+<button class="accordion active">Section 1</button>
+<div class="panel">
+  <p>aaaaaaaaaaaa</p>
+</div>
+
+<button class="accordion active">Section 2</button>
+<div class="panel">
+  <p>bbbbbbbbbbbbbb.</p>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var url = window.location.href;
+for (var i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+
+
+  for (var i = 0; i < acc.length; i++) {
+  acc[i].classList.remove('active');
+  }
+     this.classList.add('active');
+     
+
+     for (var i = 0; i < acc.length; i++) {   
+    if(!acc[i].classList.contains('active')){
+    acc[i].nextElementSibling.classList.remove('show');}
+        
+    }
+    this.nextElementSibling.classList.toggle('show');
+  });
+}
+for (var i = 0, len = acc.length; i < len; i++)
+{
+
+    (function(index){
+        acc[i].onclick = function(){
+        history.pushState({pageID: 'about'}, 'About', '/about');
+              console.log(index)  ;
+        }    
+    })(i);
+
+}
+
+
+
+
+</script>
+
+</body>
+</html>
