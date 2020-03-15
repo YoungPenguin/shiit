@@ -1,0 +1,384 @@
+<div class="basket__product ng-scope">
+    <button class="basket__product-link">
+        <span class="basket__product-title ng-binding">Din hundeforsikring</span>
+        <span class="basket__product-subtitle ng-binding">asd</span>
+    </button>
+    <button class="basket__product-remove" title="Slet forsikring"></button>
+    <div>
+        <ul class="basket__list">
+            <li class="basket__list-item ng-binding ng-scope"
+                title="Selvrisikoen er den del af en skadeudgift, du selv skal betale.">0
+                kr. i selvrisiko</li><!-- end ngRepeat: declaration in product.declarations -->
+            <li class="basket__list-item ng-binding ng-scope"
+                title="Alkas Hundeansvarsforsikring dækker det erstatningsansvar, du kan blive pålagt, hvis din hund laver skade på andre personer eller deres ting.">
+                Lovpligtig hundeforsikring</li><!-- end ngRepeat: declaration in product.declarations -->
+        </ul>
+        <button basket-item-toggler="" class="basketItem__toggler icon-arrow-formselect-after ng-binding">Se
+            dækning</button>
+        <div class="basketItem__line"></div>
+    </div>
+    <!-- ngIf: product.discountMonthly > 0 -->
+    <div class="basket__discount">
+        <div class="basket__discount__row clearfix">
+            <div class="basket__discount__BeforeText ng-binding">Pris</div>
+            <div class="basket__discount__BeforeAmount ng-binding">
+                &nbsp;47,55 kr/md&nbsp;</div>
+        </div>
+        <div class="basket__discount__row clearfix">
+            <div class="basket__discount__Text ng-binding">Din
+                forbundsrabat 10%</div>
+            <div class="basket__discount__Amount ng-binding">&nbsp;4,76
+                kr/md&nbsp;</div>
+        </div>
+    </div><!-- end ngIf: product.discountMonthly > 0 -->
+    <div class="basket__product-price clearfix">
+        <div class="basket__product-price__Text ng-binding">Din pris</div>
+        <div class="basket__product-price__Amount ng-binding">&nbsp;42<span class="sup">80</span> kr/md&nbsp;</div>
+    </div>
+</div>
+<div class="basket__product ng-scope">
+    <button class="basket__product-link">
+        <span class="basket__product-title ng-binding">Din hundeforsikring</span>
+        <span class="basket__product-subtitle ng-binding">asd</span>
+    </button>
+    <button class="basket__product-remove" title="Slet forsikring"></button>
+    <div>
+        <ul class="basket__list">
+            <li class="basket__list-item ng-binding ng-scope"
+                title="Selvrisikoen er den del af en skadeudgift, du selv skal betale.">0
+                kr. i selvrisiko</li><!-- end ngRepeat: declaration in product.declarations -->
+            <li class="basket__list-item ng-binding ng-scope"
+                title="Alkas Hundeansvarsforsikring dækker det erstatningsansvar, du kan blive pålagt, hvis din hund laver skade på andre personer eller deres ting.">
+                Lovpligtig hundeforsikring</li><!-- end ngRepeat: declaration in product.declarations -->
+        </ul>
+        <button basket-item-toggler="" class="basketItem__toggler icon-arrow-formselect-after ng-binding">Se
+            dækning</button>
+        <div class="basketItem__line"></div>
+    </div>
+    <!-- ngIf: product.discountMonthly > 0 -->
+    <div class="basket__discount">
+        <div class="basket__discount__row clearfix">
+            <div class="basket__discount__BeforeText ng-binding">Pris</div>
+            <div class="basket__discount__BeforeAmount ng-binding">
+                &nbsp;47,55 kr/md&nbsp;</div>
+        </div>
+        <div class="basket__discount__row clearfix">
+            <div class="basket__discount__Text ng-binding">Din
+                forbundsrabat 10%</div>
+            <div class="basket__discount__Amount ng-binding">&nbsp;4,76
+                kr/md&nbsp;</div>
+        </div>
+    </div><!-- end ngIf: product.discountMonthly > 0 -->
+    <div class="basket__product-price clearfix">
+        <div class="basket__product-price__Text ng-binding">Din pris</div>
+        <div class="basket__product-price__Amount ng-binding">&nbsp;42<span class="sup">80</span> kr/md&nbsp;</div>
+    </div>
+</div>
+<style>
+.basket__list-item {
+    padding: .4rem 0 .5rem 2.5rem;
+    position: relative;
+    border-bottom: 1px solid #7e8185;
+}
+.basket__discount__BeforeText {
+    float: left;
+}
+
+.basket__discount__BeforeAmount {
+    float: right;
+    text-align: right;
+    text-decoration: line-through;
+    -webkit-text-decoration-color: #fff;
+    text-decoration-color: #fff;
+}
+.basket__discount {
+    font-size: 1.3rem;
+    color: #9ea5ad;
+    margin: 2rem 2.5rem 0;
+    line-height: 1.8rem;
+}
+
+.basket__discount__Text {
+    float: left;
+}
+
+.basket__discount__Amount {
+    float: right;
+    text-align: right;
+}
+
+.basket__product-price {
+    font-size: 1.3rem;
+    color: #dfe0e1;
+    margin: 1rem 2.5rem 2rem;
+    line-height: 1.8rem;
+    float: none!important;
+}
+
+.clearfix:before {
+    content: " ";
+    display: table; 
+}
+
+:before{
+
+    box-sizing: border-box;
+
+}
+.basket__product-price__Text {
+    float: left;
+}
+.basket__discount {
+    font-size: 1.3rem;
+    color: #9ea5ad;
+    margin: 2rem 2.5rem 0;
+    line-height: 1.8rem;
+}
+.basket__product-price {
+    font-size: 1.3rem;
+    color: #dfe0e1;
+    margin: 1rem 2.5rem 2rem;
+    line-height: 1.8rem;
+    float: none!important;
+}
+
+.basket__product-price__Amount {
+    float: right;
+    text-align: right;
+}
+
+
+
+
+.basket__discount {
+    font-size: 1.3rem;
+    color: #9ea5ad;
+    margin: 2rem 2.5rem 0;
+    line-height: 1.8rem;
+}
+
+.basket__list-item:before {
+    content: "\✓";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ff5800;
+    font-size: 1.9rem;
+    line-height: 2.9rem;
+    text-indent: -.2rem;
+}
+
+    .basket__product {
+        background-color: #696c72;
+        box-shadow: 0 2px #4f535b;
+        border-radius: 3px;
+        border: 1px solid #4f535b;
+        margin: 0 0 .8rem;
+        color: #fff;
+        position: relative;
+        float: none;
+        padding: 0;
+    }
+
+
+    .basket__product-link {
+        display: block;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        float: none !important;
+        background: transparent;
+    font-weight: 400;
+    -webkit-appearance: none;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    }
+    .basket__product-subtitle, .basket__product-title {
+    float: none!important;
+    display: block;
+    margin: 0;
+    float: none;
+}
+.basket__product-title {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    padding: 2rem 4.5rem 0 2.5rem;
+    color: #fff;
+}
+
+.basket__product-subtitle {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    padding: 0 4.5rem 2rem 2.5rem;
+    color: #dfe0e1;
+}
+.basket__product-subtitle, .basket__product-title {
+    float: none!important;
+    display: block;
+    margin: 0;
+}
+
+
+    .basket__product-link {
+        background: transparent;
+        display: inline-block;
+        font-weight: 400;
+        -webkit-appearance: none;
+        border: 0;
+        padding: 0;
+        outline: 0;
+
+    }
+
+    .basket__list {
+        display: none;
+    }
+
+    .basket__list {
+        list-style: none;
+        margin: 0 2.5rem;
+        padding: 0;
+        color: #dfe0e1;
+        font-size: 1.3rem;
+        border-top: 1px solid #7e8185;
+    }
+
+    ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+    }
+
+    .basketItem__toggler {
+        border-radius: 1.5rem;
+        background: #9ea5ad;
+        color: #efeff0;
+        font-size: 1.4rem;
+        height: 2.8rem;
+        border: .2rem solid #9ea5ad;
+        width: 15.3rem;
+        margin: .5rem .5rem .5rem 2.2rem;
+        z-index: 2;
+        position: relative;
+        text-align: left;
+        padding-left: 1.2rem;
+    }
+
+
+    button {
+        -webkit-appearance: button;
+        -webkit-writing-mode: horizontal-tb !important;
+        text-rendering: auto;
+        color: buttontext;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: center;
+        align-items: flex-start;
+        cursor: default;
+        background-color: buttonface;
+        box-sizing: border-box;
+        margin: 0em;
+        font: 400 13.3333px Arial;
+        padding: 1px 6px;
+        border-width: 2px;
+        border-style: outset;
+        border-color: buttonface;
+        border-image: initial;
+    }
+
+
+
+    .basketItem__line {
+        border: .1rem solid #5e6167;
+        transform: translateY(-50%) scale(1);
+        position: relative;
+        bottom: 1.8rem;
+    }
+
+
+    div {
+        display: block;
+    }
+
+    .basket__product {
+        background-color: #696c72;
+        box-shadow: 0 2px #4f535b;
+        border-radius: 3px;
+        border: 1px solid #4f535b;
+        margin: 0 0 .8rem;
+        color: #fff;
+        position: relative;
+        float: none;
+        padding: 0;
+    }
+
+    .basket {
+        background-color: #5e6167;
+        position: fixed;
+        top: 11.5rem;
+        right: 0;
+        bottom: 0;
+        z-index: 80;
+        width: 100%;
+        transition: opacity .2s ease, top .2s ease-in-out;
+        color: #fff;
+        border-left: 1px solid #393939;
+        text-align: left;
+    }
+
+    .basket__discount {
+        font-size: 1.3rem;
+        color: #9ea5ad;
+        margin: 2rem 2.5rem 0;
+        line-height: 1.8rem;
+    }
+
+    .basket__product-remove {
+    text-align: center;
+    padding: 1.4rem 1.2rem 1rem 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.basket__product-remove {
+    background: transparent;
+    display: inline-block;
+    font-weight: 400;
+    -webkit-appearance: none;
+    border: 0;
+    padding: 0;
+    outline: 0;
+}
+
+</style>
+
+<script>
+
+
+x=document.querySelectorAll(".basketItem__toggler")
+
+
+for (var i = 0; i < x.length; i++) {
+ x[i].addEventListener("click", function() {
+    this.style.display="none";
+    this.nextElementSibling.style.display="none";
+    this.previousElementSibling.style.display = "block";
+  });
+}
+
+
+
+
+
+
+</script>
