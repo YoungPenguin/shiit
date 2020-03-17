@@ -1,245 +1,105 @@
-<!--
 
-<div data-v-0ce1aa6c="" class="approve__product">
-    <h2 data-v-0ce1aa6c="" class="approve__product-title">Din hundeforsikring</h2>
-     <span data-v-479aeccb=""
-        data-v-0ce1aa6c="" class="fractioned-price approve__product-price" split-character="."
-        style="display: none;">
-        <span data-v-479aeccb="">513</span><span data-v-479aeccb=""
-            class="fractioned-price__super">59</span><span data-v-479aeccb=""
-            class="fractioned-price__postfix">kr/år</span></span> <span data-v-479aeccb="" data-v-0ce1aa6c=""
-        class="fractioned-price approve__product-price" split-character="." style=""><span
-            data-v-479aeccb="">42</span><span data-v-479aeccb="" class="fractioned-price__super">80</span><span
-            data-v-479aeccb="" class="fractioned-price__postfix">kr/md</span></span>
-    <div data-v-0ce1aa6c="" class="approve__product__text">asd</div>
-    <p data-v-0ce1aa6c="" class="approve__product__text">Forsikringen træder i kraft: 28-03-2020</p>
-    <ul data-v-0ce1aa6c="" class="approve__list">
-        <li data-v-0ce1aa6c="" class="approve__list-item">0 kr. i selvrisiko</li>
-        <li data-v-0ce1aa6c="" class="approve__list-item">Lovpligtig hundeforsikring</li>
-    </ul>
-</div>
-
--->
-
-
-<div class="basket__product ng-scope">
-    <button class="basket__product-link">
-        <span class="basket__product-title ng-binding">Din hundeforsikring</span>
-        <span class="basket__product-subtitle ng-binding">asd</span>
-    </button>
-    <button class="basket__product-remove" title="Slet forsikring"></button>
-    <div>
-        <ul class="basket__list">
-            <li class="basket__list-item ng-binding ng-scope"
-                title="Selvrisikoen er den del af en skadeudgift, du selv skal betale.">0
-                kr. i selvrisiko</li><!-- end ngRepeat: declaration in product.declarations -->
-            <li class="basket__list-item ng-binding ng-scope"
-                title="Alkas Hundeansvarsforsikring dækker det erstatningsansvar, du kan blive pålagt, hvis din hund laver skade på andre personer eller deres ting.">
-                Lovpligtig hundeforsikring</li><!-- end ngRepeat: declaration in product.declarations -->
-        </ul>
-        <button basket-item-toggler="" class="basketItem__toggler icon-arrow-formselect-after ng-binding">Se
-            dækning</button>
-        <div class="basketItem__line"></div>
-    </div>
-    <!-- ngIf: product.discountMonthly > 0 -->
-    <div class="basket__discount">
-        <div class="basket__discount__row clearfix">
-            <div class="basket__discount__BeforeText ng-binding">Pris</div>
-            <div class="basket__discount__BeforeAmount ng-binding">
-                &nbsp;47,55 kr/md&nbsp;</div>
-        </div>
-        <div class="basket__discount__row clearfix">
-            <div class="basket__discount__Text ng-binding">Din
-                forbundsrabat 10%</div>
-            <div class="basket__discount__Amount ng-binding">&nbsp;4,76
-                kr/md&nbsp;</div>
-        </div>
-    </div><!-- end ngIf: product.discountMonthly > 0 -->
-    <div class="basket__product-price clearfix">
-        <div class="basket__product-price__Text ng-binding">Din pris</div>
-        <div class="basket__product-price__Amount ng-binding">&nbsp;42<span class="sup">80</span> kr/md&nbsp;</div>
-    </div>
-</div>
-<div class="basket__product ng-scope">
-    <button class="basket__product-link">
-        <span class="basket__product-title ng-binding">Din hundeforsikring</span>
-        <span class="basket__product-subtitle ng-binding">asd</span>
-    </button>
-    <button class="basket__product-remove" title="Slet forsikring"></button>
-    <div>
-        <ul class="basket__list">
-            <li class="basket__list-item ng-binding ng-scope"
-                title="Selvrisikoen er den del af en skadeudgift, du selv skal betale.">0
-                kr. i selvrisiko</li><!-- end ngRepeat: declaration in product.declarations -->
-            <li class="basket__list-item ng-binding ng-scope"
-                title="Alkas Hundeansvarsforsikring dækker det erstatningsansvar, du kan blive pålagt, hvis din hund laver skade på andre personer eller deres ting.">
-                Lovpligtig hundeforsikring</li><!-- end ngRepeat: declaration in product.declarations -->
-        </ul>
-        <button basket-item-toggler="" class="basketItem__toggler icon-arrow-formselect-after ng-binding">Se
-            dækning</button>
-        <div class="basketItem__line"></div>
-    </div>
-    <!-- ngIf: product.discountMonthly > 0 -->
-    <div class="basket__discount">
-        <div class="basket__discount__row clearfix">
-            <div class="basket__discount__BeforeText ng-binding">Pris</div>
-            <div class="basket__discount__BeforeAmount ng-binding">
-                &nbsp;47,55 kr/md&nbsp;</div>
-        </div>
-        <div class="basket__discount__row clearfix">
-            <div class="basket__discount__Text ng-binding">Din
-                forbundsrabat 10%</div>
-            <div class="basket__discount__Amount ng-binding">&nbsp;4,76
-                kr/md&nbsp;</div>
-        </div>
-    </div><!-- end ngIf: product.discountMonthly > 0 -->
-    <div class="basket__product-price clearfix">
-        <div class="basket__product-price__Text ng-binding">Din pris</div>
-        <div class="basket__product-price__Amount ng-binding">&nbsp;42<span class="sup">80</span> kr/md&nbsp;</div>
-    </div>
-</div>
 <style>
-    .basket__list-item {
-        padding: .4rem 0 .5rem 2.5rem;
-        position: relative;
-        border-bottom: 1px solid #7e8185;
-    }
 
-    .basket__discount__BeforeText {
-        float: left;
-    }
+div{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
 
-    .basket__discount__BeforeAmount {
-        float: right;
-        text-align: right;
-        text-decoration: line-through;
-        -webkit-text-decoration-color: #fff;
-        text-decoration-color: #fff;
-    }
-
-    .basket__discount__Text {
-        float: left;
-    }
-
-    .basket__discount__Amount {
-        float: right;
-        text-align: right;
-    }
-
-    .basket__product-price {
-        font-size: 1.3rem;
-        color: #dfe0e1;
-        margin: 1rem 2.5rem 2rem;
-        line-height: 1.8rem;
-        float: none !important;
-    }
-
-    .clearfix:before {
-        content: " ";
-        display: table;
-    }
-
-    :before {
-
-        box-sizing: border-box;
-
-    }
-
-    .basket__product-price__Text {
-        float: left;
-    }
-
-    .basket__discount {
-        font-size: 1.3rem;
-        color: #9ea5ad;
-        margin: 2rem 2.5rem 0;
-        line-height: 1.8rem;
-    }
-
-    .basket__product-price__Amount {
-        float: right;
-        text-align: right;
-    }
-
-    .basket__list-item:before {
-        content: "\✓";
-        position: absolute;
-        top: 0;
-        left: 0;
-        color: #ff5800;
-        font-size: 1.9rem;
-        line-height: 2.9rem;
-        text-indent: -.2rem;
-    }
-
-    .basket__product {
-        background-color: #696c72;
-        box-shadow: 0 2px #4f535b;
-        border-radius: 3px;
-        border: 1px solid #4f535b;
-        margin: 0 0 .8rem;
-        color: #fff;
-        position: relative;
-        float: none;
-        padding: 0;
-    }
 
     .basket__product-link {
         display: block;
         width: 100%;
         text-align: left;
         cursor: pointer;
-        float: none !important;
+     
         background: transparent;
         font-weight: 400;
         -webkit-appearance: none;
         border: 0;
         padding: 0;
         outline: 0;
+        content: "";
+  clear: both;
+  display: table;
+        
     }
-
-    .basket__product-subtitle,
-    .basket__product-title {
-        float: none !important;
-        display: block;
-        margin: 0;
-        float: none;
-    }
-
-    .basket__product-title {
-        font-size: 1.6rem;
-        line-height: 2.2rem;
-        padding: 2rem 4.5rem 0 2.5rem;
+.approve__product {
+    background-color: #696c72;
+        box-shadow: 0 2px #4f535b;
+        border-radius: 3px;
+        border: 1px solid #4f535b;
+        margin: 0 0 .8rem;
         color: #fff;
-    }
+        position: relative;
 
-    .basket__product-subtitle {
-        font-size: 1.3rem;
-        line-height: 1.8rem;
-        padding: 0 4.5rem 2rem 2.5rem;
-        color: #dfe0e1;
-    }
-
-    .basket__list {
-        list-style: none;
-        margin: 0 2.5rem;
         padding: 0;
-        color: #dfe0e1;
-        font-size: 1.3rem;
-        border-top: 1px solid #7e8185;
-        display: none;
-    }
+}
 
-    ul {
-        display: block;
-        list-style-type: disc;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        padding-inline-start: 40px;
-    }
+.approve__product-title {
+    font-size: 2.2rem;
+    font-weight: 400;
+    padding: 0;
+    line-height: inherit;
+    float: left;
+}
 
+
+.approve__product-price {
+    float: right;
+    font-size: 2.2rem;
+    font-weight: 400;
+    padding: 0;
+}
+
+.approve__product__text {
+    font-size: 1.6rem;
+    clear: both;
+    font-size: 1.4rem;
+        padding: 0rem 4rem 0rem 4rem;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0 0 2.8rem;
+}
+
+.approve__list {
+    clear: both;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    padding: 0 4rem 4rem 4rem;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.approve__list-item {
+    padding: .1rem 0 .2rem 2.5rem;
+    position: relative;
+}
+
+.approve__list-item::before {
+    content: "\✓";
+    color: rgb(255, 88, 0);
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-indent: -0.3rem;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
     .basketItem__toggler {
         border-radius: 1.5rem;
         background: #9ea5ad;
@@ -253,31 +113,7 @@
         position: relative;
         text-align: left;
         padding-left: 1.2rem;
-    }
-
-    button {
-        -webkit-appearance: button;
-        -webkit-writing-mode: horizontal-tb !important;
-        text-rendering: auto;
-        color: buttontext;
-        letter-spacing: normal;
-        word-spacing: normal;
-        text-transform: none;
-        text-indent: 0px;
-        text-shadow: none;
-        display: inline-block;
-        text-align: center;
-        align-items: flex-start;
-        cursor: default;
-        background-color: buttonface;
-        box-sizing: border-box;
-        margin: 0em;
-        font: 400 13.3333px Arial;
-        padding: 1px 6px;
-        border-width: 2px;
-        border-style: outset;
-        border-color: buttonface;
-        border-image: initial;
+   
     }
 
     .basketItem__line {
@@ -285,22 +121,45 @@
         transform: translateY(-50%) scale(1);
         position: relative;
         bottom: 1.8rem;
+           
     }
 
-    div {
-        display: block;
-    }
 
-    .basket__product-remove {
-        background: transparent;
-        display: inline-block;
-        font-weight: 400;
-        -webkit-appearance: none;
-        border: 0;
-        padding: 0;
-        outline: 0;
-    }
+
+
 </style>
+</head>
+<body>
+
+<div data-v-0ce1aa6c="" class="approve__product">
+   <div class="basket__product-link">     
+    <h2 data-v-0ce1aa6c="" class="approve__product-title">Din hundeforsikring</h2> <span data-v-479aeccb="" data-v-0ce1aa6c="" class="fractioned-price approve__product-price" split-character="." style="display: none;">
+        <span data-v-479aeccb="">513</span>
+        <span data-v-479aeccb="" class="fractioned-price__super">59</span>
+        <span data-v-479aeccb="" class="fractioned-price__postfix">kr/år</span></span>
+        <span data-v-479aeccb="" data-v-0ce1aa6c="" class="fractioned-price approve__product-price" split-character=".">
+        <span data-v-479aeccb="">42</span>
+        <span data-v-479aeccb="" class="fractioned-price__super">80</span>
+        <span data-v-479aeccb="" class="fractioned-price__postfix">kr/md</span></span>
+           </div>     
+   <div>     
+<div style="display: none">        
+    <div data-v-0ce1aa6c="" class="approve__product__text">asd</div>
+    <p data-v-0ce1aa6c="" class="approve__product__text">Forsikringen træder i kraft: 19-03-2020</p>
+    <ul data-v-0ce1aa6c="" class="approve__list">
+        <li data-v-0ce1aa6c="" class="approve__list-item">0 kr. i selvrisiko</li>
+        <li data-v-0ce1aa6c="" class="approve__list-item">Lovpligtig hundeforsikring</li>
+    </ul>
+</div>
+    
+    <button class="basketItem__toggler " data-foucs-source="">Se
+    dækning</button>
+<div class="basketItem__line"></div>
+</div>
+    
+    
+</div>
+
 
 <script>
     x = document.querySelectorAll(".basketItem__toggler")
@@ -312,3 +171,6 @@
         });
     }
 </script>
+
+</body>
+</html>
