@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div data-v-0ce1aa6c="" class="approve__product">
+    <h2 data-v-0ce1aa6c="" class="approve__product-title">Din hundeforsikring</h2> <span data-v-479aeccb=""
+        data-v-0ce1aa6c="" class="fractioned-price approve__product-price" split-character="."
+        style="display: none;"><span data-v-479aeccb="">513</span><span data-v-479aeccb=""
+            class="fractioned-price__super">59</span><span data-v-479aeccb=""
+            class="fractioned-price__postfix">kr/år</span></span> <span data-v-479aeccb="" data-v-0ce1aa6c=""
+        class="fractioned-price approve__product-price" split-character="."><span data-v-479aeccb="">42</span><span
+            data-v-479aeccb="" class="fractioned-price__super">80</span><span data-v-479aeccb=""
+            class="fractioned-price__postfix">kr/md</span></span>
+    <div class="phone__toggle">
+        <div data-v-0ce1aa6c="" class="approve__product__text">asd</div>
+        <p data-v-0ce1aa6c="" class="approve__product__text">Forsikringen træder i kraft: 20-03-2020</p>
+        <ul data-v-0ce1aa6c="" class="approve__list">
+            <li data-v-0ce1aa6c="" class="approve__list-item">0 kr. i selvrisiko</li>
+            <li data-v-0ce1aa6c="" class="approve__list-item">Lovpligtig hundeforsikring</li>
+        </ul>
+    </div>
+
+    <button class="basketItem__toggler " data-foucs-source="">Se
+        dækning</button>
+    <div class="basketItem__line"></div>
+</div>
+
+
+
+<style>
+
+    .basketItem__toggler {
+        display: none;
+        border-radius: 1.5rem;
+        background: #9ea5ad;
+        color: #efeff0;
+        font-size: 1.4rem;
+        height: 2.8rem;
+        border: .2rem solid #9ea5ad;
+        width: 15.3rem;
+        margin: .5rem .5rem .5rem 2.2rem;
+        z-index: 2;
+        position: relative;
+        text-align: left;
+        padding-left: 1.2rem;
+   
+    }
+
+    .basketItem__line {
+        display: none;
+        border: .1rem solid #5e6167;
+        transform: translateY(-50%) scale(1);
+        position: relative;
+        bottom: 1.8rem;
+           
+    }
+
+    @media (max-width: 767px){
+.approve__product-price {
+    position: absolute;
+    bottom: 3rem;
+    left: 2.5rem;
+    margin: 0;
+}}
+
+@media (max-width: 767px){
+.phone__toggle {
+
+    display:none;
+    }
+
+    .basketItem__toggler {
+        display:block;
+    }
+    .basketItem__line {
+        display:block;
+    }
+}
+
+</style>
+
+
+<style>
+    .approve__product {
+        padding: 4rem 4.7rem 5rem 6.3rem;
+        margin: 0 0 1.4rem;
+        overflow:auto;
+    }
+
+
+    .approve__product {
+        background-color: #fff;
+        border-bottom: 1px solid #cecfd1;
+        position: relative;
+        overflow:auto;
+    }
+
+    .approve__product-title {
+        font-size: 2.2rem;
+        font-weight: 400;
+        padding: 0;
+        overflow:auto;
+    }
+
+    .approve__product-title {
+        line-height: inherit;
+        float: left;
+        overflow:auto;
+    }
+
+    .approve__product-price {
+        float: right;
+        overflow:auto;
+    }
+
+    .approve__product-price {
+        font-size: 2.2rem;
+        font-weight: 400;
+        padding: 0;
+    }
+
+    .approve__product__text {
+        clear: both;
+        font-size: 1.4rem;
+    }
+
+    .fractioned-price__super[data-v-479aeccb] {
+        font-size: .6em;
+        vertical-align: super;
+    }
+
+    .fractioned-price__postfix[data-v-479aeccb] {
+        margin-left: .5em;
+    }
+
+    div {
+        margin: auto;
+        padding: auto;
+    }
+
+    p {
+        margin: 0 0 2.8rem;
+    }
+
+    .approve__list {
+        clear: both;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 1.4rem;
+    }
+
+    .approve__list-item {
+        padding: .1rem 0 .2rem 2.5rem;
+        position: relative;
+    }
+
+    .approve__list {
+        clear: both;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 1.4rem;
+    }
+
+    .approve__list-item::before {
+        content: "";
+        color: rgb(255, 88, 0);
+        font-size: 2rem;
+        line-height: 2.5rem;
+        text-indent: -0.3rem;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+</style>
+
+<script>
+    x = document.querySelectorAll(".basketItem__toggler")
+    for (var i = 0; i < x.length; i++) {
+        x[i].addEventListener("click", function () {
+            this.style.display = "none";
+            this.nextElementSibling.style.display = "none";
+            this.previousElementSibling.style.display = "block";
+        });
+    }
+</script>
+</body>
+</html>
