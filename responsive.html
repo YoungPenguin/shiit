@@ -1,5 +1,100 @@
 <!DOCTYPE html>
 <html>
+<body>
+<div id= "posts"></div>
+
+
+
+<style>
+.giftcard {
+    padding: 1rem 0;
+        font-weight: 400;
+            border-bottom: 1px solid #868F98;
+}
+.flex {
+    display: flex;
+}
+.flex.end {
+    justify-content: flex-end;
+}
+
+
+.label {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: left;
+}
+
+.flex.even > * {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.value {
+    text-align: right;
+}
+.flex.even > * {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+
+.tag {
+    padding: 1rem 2rem;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #05C47F;
+}
+section.discount-section > ul.discounts > li > span.value[data-v-1051ea1d] {
+    text-align: right;
+}
+</style>
+
+<script>
+var html = [
+    '<span class="label">Dit gavekort</span> ',
+    '<span class="value"><span class="tag">100 kr</span></span>'
+].join('');
+
+var li = document.createElement('li');
+    li.setAttribute('class', 'giftcard flex even end');
+    li.innerHTML = html;
+    document.getElementById('posts').appendChild(li);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
