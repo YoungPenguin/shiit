@@ -1,3 +1,63 @@
+
+var html = [
+    '<span class="label">Dit gavekort</span> ',
+    '<span class="value"><span class="tag">100 kr</span></span>'
+].join('');
+
+var li = document.createElement('li');
+    li.setAttribute('class', 'giftcard flex even end');
+    li.innerHTML = html;
+    document.querySelector('.basket__membership').parentNode.insertBefore(li,document.querySelector('.basket__membership'));
+
+    <style>
+.giftcard {
+color: #9ea5ad;
+font-size: 1.5rem;
+margin: 3rem 0 2rem;
+padding-bottom: 1rem;
+}
+.flex {
+    display: flex;
+}
+.flex.end {
+    justify-content: flex-end;
+}
+
+
+.label {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: left;
+}
+
+.flex.even > * {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.value {
+    text-align: right;
+}
+.flex.even > * {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+
+.tag {
+    padding: 1rem 2rem;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #05C47F;
+}
+
+</style>
+
+
+-------------------
+
 <!DOCTYPE html>
 <html>
 <body>
