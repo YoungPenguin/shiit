@@ -1,3 +1,92 @@
+<!--- if u know u know --->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+
+.accordion__content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Accordion</h2>
+
+
+<li class = "accordion__item"> 
+
+<div class = "accordion__panel accordion__panel--hover">
+<button class="accordion"><h2 class = "accordion__headline">somthing</h2></button>
+<div class="accordion__content hide">
+  <p>aaaaaaaaaaaa</p>
+</div>
+
+<button class="accordion"><h2 class = "accordion__headline">somthing22222</h2></button>
+<div class="accordion__content clearfix hide">
+  <p>bbbbbbbbbbbbbb.</p>
+</div>
+</div>
+</li>
+
+<script>
+
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      for (var i = 0; i < acc.length; i++) {
+    acc[i].classList.remove('active');
+    }
+    
+      this.classList.add("active");
+      
+           for (var i = 0; i < acc.length; i++) {   
+      if(!acc[i].classList.contains('active')){
+      acc[i].nextElementSibling.style.maxHeight = null;
+      }    
+      }
+      
+      if (this.nextElementSibling.style.maxHeight) {
+        this.nextElementSibling.style.maxHeight = null;
+      } else {
+        this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + "px";
+      } 
+    });
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
 <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion-->
 
 
