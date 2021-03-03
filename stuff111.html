@@ -102,6 +102,17 @@ body {
   display: flex;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slide-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.slide-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 .slide {
   scroll-snap-align: end;
   min-width: 90vw;
